@@ -29,3 +29,7 @@ body {
   background: var(--background);
   font-family: "Space Mono";
 }
+
+:root * {
+  border-color: var(--border);
+}
