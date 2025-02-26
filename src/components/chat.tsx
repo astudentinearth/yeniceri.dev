@@ -6,7 +6,7 @@ export function ChatProject() {
   return (
     <div className="flex flex-col lg:flex-row gap-8 items-center">
       <Image
-        className="lg:w-[50%] rounded-2xl border drop-shadow-lg hover:drop-shadow-xl transition-[filter] shrink-0"
+        className="lg:w-[50%] rounded-lg border drop-shadow-lg hover:drop-shadow-xl transition-[filter] shrink-0"
         src={"/chat.png"}
         alt="Chat app"
         width={996}
