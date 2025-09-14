@@ -1,0 +1,50 @@
+---
+import Skills from "../components/skills.astro"
+import SocialButton from "../components/social-button.astro"
+import { Twitter, Linkedin } from "@lucide/astro"
+import Github from "simple-icons-astro/Github" 
+import DarkwriteProject from "../components/darkwrite.astro"
+import ChatProject from "../components/chat.astro"
+import WeatherAppProject from "../components/weather.astro"
+import Footer from "../components/footer.astro"
+import BaseLayout from "@/layouts/base.astro"
+---
+<BaseLayout>
+    <div class="flex flex-col items-center absolute left-0 top-0 w-full h-full overflow-y-auto">
+      <div class="flex flex-col gap-4 lg:gap-8 items-center p-8 max-w-360">
+        <div class="flex flex-col gap-4">
+          <h2 class="text-2xl lg:text-4xl text-[#B8FFBB]">
+            {"// Hi there!"}
+          </h2>
+          <h1 class="text-4xl lg:text-6xl text-[#DADADA] font-bold">
+            I&apos;m Burak, a{" "}
+            <span class="underline">full-stack developer</span> and computer
+            science student.
+          </h1>
+        </div>
+        <Skills />
+        <div class="flex gap-3">
+          <SocialButton href="https://github.com/astudentinearth/">
+            <Github />
+          </SocialButton>
+          <SocialButton href="https://x.com/codingwithburak/">
+            <Twitter />
+          </SocialButton>
+          <SocialButton href="https://www.linkedin.com/in/burak-yeniceri/">
+            <Linkedin />
+          </SocialButton>
+        </div>
+      </div>
+      <div class="bg-background-2 p-2 xl:p-12 w-full flex flex-col items-center">
+        <h1 class="text-2xl sm:text-3xl lg:text-6xl mt-8">
+          {"/* my projects */"}
+        </h1>
+        <div class="flex flex-col gap-24 mt-8 items-center p-2 sm:p-6 lg:p-8 max-w-360">
+          <DarkwriteProject />
+          <WeatherAppProject />
+          <ChatProject />
+        </div>
+      </div>
+      <Footer/>
+    </div>
+</BaseLayout>

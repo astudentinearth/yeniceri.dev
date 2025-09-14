@@ -1,0 +1,50 @@
+---
+import PrimaryButton from "./button.astro";
+import SecondaryButton from "./secondary-button.astro";
+import { Code, SquareArrowOutUpRight } from "@lucide/astro";
+---
+
+<div class="flex flex-col lg:flex-row gap-8 items-center">
+  <img
+    class="lg:w-[50%] rounded-lg border drop-shadow-lg hover:drop-shadow-xl transition-[filter] shrink-0"
+    src={"/darkwrite.png"}
+    alt="Darkwrite"
+    width={1583}
+    height={992}
+  />
+  <div class="flex flex-col gap-4">
+    <h2 class="text-3xl lg:text-6xl flex gap-4 items-center font-bold">
+      <img
+        src={"/darkwrite_icon.png"}
+        width={64}
+        height={64}
+        alt="Darkwrite app icon"
+        class="rounded-xl size-12 lg:size-16"
+      />
+      Darkwrite
+    </h2>
+    <p class="text-lg lg:text-2xl">
+      Powerful and personal note taking application.{" "}
+      <span class="underline">Fully open source.</span> Available for all desktops,
+      completely for free.
+    </p>
+    <p class="opacity-75 hover:opacity-90 transition-opacity">
+      Made with TypeScript, React, Electron and many others.
+    </p>
+    <div class="flex gap-3">
+      <PrimaryButton href="https://darkwrite.app" class="w-1/2 sm:w-fit">
+        <div class="flex gap-2 items-center">
+          <SquareArrowOutUpRight class="size-5 sm:size-6" />darkwrite.app
+        </div>
+      </PrimaryButton>
+      <SecondaryButton
+        href="https://github.com/astudentinearth/darkwrite"
+        class="w-1/2 sm:w-fit"
+      >
+        <div class="flex gap-2 items-center">
+          <Code class="size-5 sm:size-6" />Source code
+        </div>
+      </SecondaryButton>
+    </div>
+  </div>
+</div>

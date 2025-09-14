@@ -1,0 +1,24 @@
+---
+import Github from "simple-icons-astro/Github";
+import { Twitter, Linkedin } from "@lucide/astro";
+---
+
+<footer
+  class="p-4 w-full flex flex-col sm:flex-row justify-start gap-3 [&_a]:opacity-70 [&_a]:hover:opacity-100 [&_a]:transition-opacity"
+>
+  <div class="flex gap-3">
+    <a href="https://github.com/astudentinearth/">
+      <Github />
+    </a>
+    <a href="https://x.com/codingwithburak/">
+      <Twitter />
+    </a>
+    <a href="https://www.aedin.com/in/burak-yeniceri/">
+      <Linkedin />
+    </a>
+  </div>
+  <div class="grow"></div>
+  <a href={"https://github.com/astudentinearth/yeniceri.dev"}> Source code </a>
+  <div class="hidden sm:block"></div>
+  <a href={"https://yeniceri.dev/acknowledgements.txt"}> Acknowledgements </a>
+</footer>

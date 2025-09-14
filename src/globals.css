@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+:root {
+  --background: hsl(240 10% 8%);
+  --background-2: hsl(240 9% 11%);
+  --primary: hsl(0 0% 100%);
+  --primary-foreground: hsl(0 0% 0%);
+  --border: hsl(0 0% 26%);
+  --foreground: hsl(0 0% 100%);
+}
+
+@theme inline {
+    --color-primary: var(--primary);
+    --color-border: var(--border);
+    --color-background: var(--background);
+    --color-primary-foreground: var(--primary-foreground);
+    --color-background-2: var(--background-2);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+
+:root * {
+  border-color: var(--border);
+}
+
+@font-face { 
+  font-family: 'Fantasque Sans Mono'; 
+  src: url('/fantasque-sans-mono/FantasqueSansMono-BoldItalic.woff2'); 
+  font-weight: 700; 
+  font-display: swap;
+  font-style: italic;
+}
+@font-face { 
+  font-family: 'Fantasque Sans Mono'; 
+  src: url('/fantasque-sans-mono/FantasqueSansMono-Bold.woff2'); 
+  font-weight: 700; 
+  font-display: swap;
+  font-style: normal;
+}
+@font-face { 
+  font-family: 'Fantasque Sans Mono'; 
+  src: url('/fantasque-sans-mono/FantasqueSansMono-Italic.woff2'); 
+  font-weight: 400; 
+  font-display: swap;
+  font-style: italic;
+}
+@font-face { 
+  font-family: 'Fantasque Sans Mono'; 
+  src: url('/fantasque-sans-mono/FantasqueSansMono-Regular.woff2'); 
+  font-weight: 400; 
+  font-display: swap;
+  font-style: normal;
+}
+
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: "Fantasque Sans Mono";
+}
