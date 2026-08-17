@@ -15,15 +15,15 @@ export const WorkItem = (props: WorkItemProps) => {
         <h1 className="text-default!">{props.title}</h1>
         <span className="type-md text-muted">{props.date}</span>
       </div>
-      <span className="mt-3 mb-2 text-base text-muted">
+      <span className="mt-3 mb-2 type-sm text-muted">
         {props.techs.join("  |  ")}
       </span>
       <div className="gap-3 flex flex-col">
       {props.children}
       </div>
-      <div className="w-full h-auto mt-6">
-        <img src={props.imageSrc} className="w-full h-auto" />
-      </div>
+      { props.imageSrc && <div className="w-full h-auto mt-6 relative">
+        <img src={props.imageSrc} className="w-full h-auto zoom-on-hover" />
+      </div>}
     </div>
   )
 }

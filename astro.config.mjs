@@ -12,6 +12,11 @@ export default defineConfig({
       }
     },
     plugins: [tailwindcss()],
+    build: {
+      license: {
+        fileName: "licenses.md"
+      }
+    }
   },
   integrations: [react()]
 });

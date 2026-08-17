@@ -3,12 +3,17 @@ import BaseLayout from "@/layouts/base.astro"
 import Hero from "./_components/Hero.astro";
 import About from "./_components/About.astro";
 import Work from "./_components/Work.astro";
+import Contact from "./_components/Contact.astro";
+import Footer from "@/components/Footer.astro";
+import Nav from "@/components/Nav.astro";
 ---
 <BaseLayout>
+  <Nav />
   <Hero />
   <hr class="section-hr"/>
   <About />
   <hr class="section-hr"/>
   <Work />
-  <hr class="section-hr"/>
+  <Contact />
+  <Footer />
 </BaseLayout>

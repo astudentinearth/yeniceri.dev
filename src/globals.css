@@ -12,6 +12,10 @@
   --type-sans: "Instrument Sans Variable", system-ui,-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @theme inline {
     --color-primary: var(--primary);
     --color-border: var(--border);
@@ -47,8 +51,8 @@ body {
 }
 
 
-@utilty type-sm {
-  @apply text-base leading-6;
+@utility type-sm {
+  @apply md:text-base md:leading-6 text-sm;
   letter-spacing: -0.02em;
 }
 
@@ -57,7 +61,7 @@ body {
 }
 
 @utility type-md {
-  @apply text-xl leading-6;
+  @apply md:text-xl text-base md:leading-6;
 }
 
 .type-md strong {
@@ -70,7 +74,7 @@ body {
 }
 
 @utility type-giant {
-  @apply tracking-tighter lg:leading-30 lg:text-[6rem] text-[4rem] leading-16;
+  @apply tracking-tighter lg:leading-30 lg:text-[6rem] text-[3.5rem] leading-16;
 }
 
 h1 {
@@ -78,7 +82,7 @@ h1 {
 }
 
 @utility top-highlight {
-  box-shadow: 0px -0.5px --var(--top-highlight);
+  box-shadow: 0px -1px --var(--top-highlight);
 }
 
 img {
@@ -91,4 +95,12 @@ img {
 
 hr.section-hr {
   @apply border-text-muted;
+}
+
+p a, li a, .prose a {
+  @apply underline;
+}
+
+@utility zoom-on-hover {
+  @apply transition-transform ease-in-out duration-500 hover:scale-103;
 }

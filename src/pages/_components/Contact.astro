@@ -1,0 +1,36 @@
+---
+import { LINKEDIN_URL } from "@/lib/resources";
+---
+
+<section class="main-layout lg:py-16 py-4" id="contact">
+  <div></div>
+  <div
+    class="col-span-1 text-justify gap-3 bg-background-2 p-4 py-8 rounded-xl top-highlight lg:p-16 lg:py-24 flex flex-col type-md"
+  >
+    <h1 class="text-default! mb-2 md:mb-8">CONTACT</h1>
+    <p>If you are willing to collaborate on a project, you can:</p>
+    <ul class="list-disc ml-6">
+      <li>message me on <a href={LINKEDIN_URL}>LinkedIn</a></li>
+      <li>
+        or email me at burak.yn.dev@gmail.com <a
+          id="copy-email"
+          class="underline cursor-pointer">(copy)</a
+        >
+      </li>
+    </ul>
+  </div>
+  <div></div>
+</section>
+
+<script>
+  import { EMAIL_ADDRESS } from "@/lib/resources";
+  document.getElementById("copy-email").addEventListener("click", (e) => {
+    e.preventDefault();
+    navigator.clipboard?.writeText(EMAIL_ADDRESS);
+    const originalText = e.target.innerText;
+    e.target.innerText = "(✓ copied)";
+    setTimeout(() => {
+      e.target.innerText = originalText;
+    }, 1500);
+  });
+</script>
