@@ -86,7 +86,7 @@ img {
 }
 
 @utility main-layout {
-  @apply lg:grid lg:grid-cols-[1fr_800px_1fr] lg:px-12 lg:gap-6 gap-4 px-2 flex flex-col;
+  @apply lg:grid lg:grid-cols-[1fr_800px_1fr] lg:px-12 lg:gap-6 gap-4 px-4 flex flex-col;
 }
 
 hr.section-hr {

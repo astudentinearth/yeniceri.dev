@@ -1,0 +1,156 @@
+---
+import { WorkItem } from "./WorkItem";
+import { LinkButton } from "@/components/Button";
+---
+
+<section class="main-layout lg:py-30 py-24">
+  <h1 class="lg:justify-self-end lg:text-end">WORK</h1>
+  <div class="col-span-1 text-justify gap-8 flex flex-col type-md text-default">
+    <WorkItem
+      title="Darkwrite"
+      techs={[
+        "Electron",
+        "React",
+        "Redux",
+        "SQLite",
+        "Node",
+        "TipTap/ProseMirror",
+        "TypeScript",
+        "GitHub Actions",
+        "...",
+      ]}
+      date="2022 → ongoing"
+      imageSrc="/darkwrite_thumbnail.webp"
+    >
+      <p>
+        Free and open-source tree based note taking application with a
+        privacy-focused, local-first and user-centric approach. 300+ stars and
+        4000+ total downloads.
+      </p>
+      <ul class="list-disc ml-6">
+        <p class="-ml-6">Features:</p>
+        <li>Workspaces</li>
+        <li>Rich text editor with tables, images and file links</li>
+        <li>User-sortable tree of notes</li>
+        <li>HTML, Markdown and PDF export</li>
+        <li>Custom themes</li>
+      </ul>
+      <div class="flex gap-3 mt-2">
+        <LinkButton href="https://darkwrite.app">Website</LinkButton>
+        <LinkButton
+          variant="secondary"
+          href="https://github.com/astudentinearth/darkwrite"
+          >Source code</LinkButton
+        >
+      </div>
+    </WorkItem>
+    <hr class="section-hr" />
+    <WorkItem
+      title="arvence.com"
+      date="2026"
+      techs={["Astro", "Figma"]}
+      imageSrc="/arvence.webp"
+    >
+      <p>
+        Designed and built the website &amp; branding for a tech agency from
+        scratch.
+      </p>
+      <div class="flex gap-3 mt-2">
+        <LinkButton href="https://arvence.com">View live</LinkButton>
+      </div>
+    </WorkItem>
+    <hr class="section-hr" />
+    <WorkItem
+      title="sorugram.app"
+      date="2024 → 2025"
+      techs={[
+        "Java",
+        "Spring Boot",
+        "Flyway",
+        "Docker Compose",
+        "GitHub Actions",
+        "Astro",
+        "PostgreSQL",
+        "nginx",
+      ]}
+    >
+      <p>
+        Built Spring Boot backends for our student collaboration startup. I
+        created our website as well, in addition to maintaining our server.
+        Unfortunately, this project is now defunct.
+      </p>
+      <div class="flex gap-3 mt-2">
+        <LinkButton variant="secondary" href="https://sorugram.app"
+          >View website (archived)</LinkButton
+        >
+      </div>
+    </WorkItem>
+    <hr class="section-hr" />
+    <WorkItem
+      title="My hobby kernel"
+      date="2025 → ongoing"
+      techs={["Raw C without a standard library. It's ring 0 :)"]}
+    >
+      <p>
+        I had an obsession for years to build an operating system. This is the
+        furthest I got yet: PML4 paging, PS/2 keyboard, a fixed-block heap
+        allocator, ACPI table parsing, PCI enumeration, a custom test API, fancy
+        logs in QEMU’s serial output. I work on it as I feel doing so. It’s
+        open-source, obviously :)
+      </p>
+      <div class="flex gap-3 mt-2">
+        <LinkButton
+          variant="secondary"
+          href="https://github.com/astudentinearth/kernel-limine-efi"
+          >Source code</LinkButton
+        >
+      </div>
+    </WorkItem>
+    <hr class="section-hr" />
+    <WorkItem
+      title="Resource monitor with Qt6"
+      date="2026"
+      techs={["Qt6 Widgets", "C++"]}
+      imageSrc="/sysmon.webp"
+    >
+      <p>
+        Created this in a weekend to give Qt a try. Had lots of fun building it.
+        Works on macOS and Linux.
+      </p>
+      <div class="flex gap-3 mt-2">
+        <LinkButton
+          variant="secondary"
+          href="https://github.com/astudentinearth/system-monitor-qt"
+          >Source code</LinkButton
+        >
+      </div>
+    </WorkItem>
+    <hr class="section-hr" />
+    <WorkItem
+      title="Weather PWA"
+      date="2024"
+      techs={["React"]}
+      imageSrc="/weather.png"
+    >
+      <p>
+        First React app I finished (immediately after YKS). Fully responsive,
+        installable on your phone as a Progressive Web App, supports both
+        Turkish and English. It also caches weather data.
+      </p>
+      <div class="flex gap-3 mt-2">
+        <LinkButton href="https://astudentinearth.github.io/weather-app"
+          >View live</LinkButton
+        >
+        <LinkButton
+          variant="secondary"
+          href="https://github.com/astudentinearth/weather-app"
+          >Source code</LinkButton
+        >
+      </div>
+    </WorkItem>
+    <hr class="section-hr" />
+    <span class="w-full flex text-center justify-center text-muted"
+      >thanks for sticking till the end</span
+    >
+  </div>
+</section>
