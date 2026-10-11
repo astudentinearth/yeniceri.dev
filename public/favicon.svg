@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,-1253,0)">
+        <path id="favicon" d="M1317,12.8L1317,51.2C1317,58.265 1311.265,64 1304.2,64L1265.8,64C1258.735,64 1253,58.265 1253,51.2L1253,12.8C1253,5.735 1258.735,0 1265.8,0L1304.2,0C1311.265,0 1317,5.735 1317,12.8Z" style="fill:rgb(2,2,2);"/>
+        <clipPath id="_clip1">
+            <path id="favicon1" serif:id="favicon" d="M1317,12.8L1317,51.2C1317,58.265 1311.265,64 1304.2,64L1265.8,64C1258.735,64 1253,58.265 1253,51.2L1253,12.8C1253,5.735 1258.735,0 1265.8,0L1304.2,0C1311.265,0 1317,5.735 1317,12.8Z"/>
+        </clipPath>
+        <g clip-path="url(#_clip1)">
+            <g transform="matrix(1.594707,0,0,1.594707,-736.540944,-2.546185)">
+                <g transform="matrix(24,0,0,24,1278.915947,26.010685)">
+                </g>
+                <text x="1255.272px" y="26.011px" style="font-family:'FantasqueSansMono-Regular', 'Fantasque Sans Mono', monospace;font-size:24px;fill:white;">&gt;<tspan x="1266.494px " y="26.011px ">_</tspan></text>
+            </g>
+        </g>
+    </g>
+</svg>

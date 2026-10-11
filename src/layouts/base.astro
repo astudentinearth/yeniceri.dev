@@ -1,15 +1,34 @@
 ---
 import "@/globals.css";
 import "@fontsource-variable/instrument-sans/wght.css";
+
+const description = "Software developer focused on crafting beautiful systems & products, with a deep passion for open-source software."
+
+const title = "Burak's website"
 ---
 
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <meta name="generator" content={Astro.generator} />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Burak&apos;s Website</title>
+    <meta name="description" content={description} />
+    <meta name="keywords" content="portfolio, software developer, web designer, desktop software developer, darkwrite, open source, free software, web developer" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content={description} />
+    <meta propname="og:locale" content="en_US" />
+    <meta propname="og:title" content={title} />
+    <meta property="og:url" content="https://yeniceri.dev" />
+    <meta property="og:image" content="https://yeniceri.dev/og/og-image.png" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content="https://yeniceri.dev/og/og-image.png" />
+
+    <title>{title}</title>
   </head>
   <body>
     <slot />
